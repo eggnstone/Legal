@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1>Privacy Policy for PDFreflow</h1>
-    <p class="last-updated"><strong>Last updated:</strong> 2026-07-23</p>
+    <p class="last-updated"><strong>Last updated:</strong> 2026-07-26</p>
 
     <h2>1. Controller</h2>
     <p>
@@ -37,9 +37,17 @@
         Email: privacy.policy.reader@eggnstone.com
     </p>
     <p>(hereinafter "we", "us", or "our")</p>
+    <p>We are a sole proprietorship and are not required to appoint a Data Protection Officer under Art. 37 GDPR / § 38 BDSG. Data protection enquiries reach the controller directly at the address above.</p>
 
     <h2>2. Overview</h2>
-    <p>PDFreflow ("the App") is a PDF reader application. We take the protection of your personal data seriously and process it in accordance with the EU General Data Protection Regulation (GDPR/DSGVO), the ePrivacy Directive, and applicable national data protection laws.</p>
+    <p>PDFreflow ("the App") is a document reader that reflows PDF, EPUB, TXT and HTML files for comfortable reading on small screens. This policy covers every platform on which we make the App available, and our website www.pdfreflow.com. We take the protection of your personal data seriously and process it in accordance with the EU General Data Protection Regulation (GDPR/DSGVO), the ePrivacy Directive, and applicable national data protection laws.</p>
+    <p><strong>The short version:</strong> your documents and your reading are processed on your device and are not transmitted to us. Nothing reaches <em>us</em> unless you switch it on (crash reports, usage analytics) or actively send it (feedback, an optional document upload). Three points deserve your attention:</p>
+    <ul>
+        <li>A feedback report sent from the reading view always includes the open document's <strong>file name</strong> and a short excerpt of its text, even if you decline the upload (Section 3.5).</li>
+        <li>The feedback function can optionally upload the document itself. That is always a separate, explicit decision on your part (Section 3.5).</li>
+        <li>Choosing one of the Google Fonts reading fonts causes the App to download that font from Google, which reveals your IP address to Google — this is the one thing that leaves your device without a consent prompt (Section 3.6).</li>
+    </ul>
+    <p>The App is currently in public beta. Where the beta behaves differently from the finished product, this policy says so.</p>
 
     <h2>3. Data We Collect</h2>
 
@@ -52,6 +60,7 @@
         <li>A local cache of processed book data</li>
     </ul>
     <p>This local data processing is necessary for the App to function and does not require consent under GDPR, as no personal data leaves your device.</p>
+    <p>The one exception is the feedback function: if — and only if — you use it, some of this data is transmitted, as described in Section 3.5. Nothing else in the App ever sends a document, a reading position or a setting anywhere.</p>
 
     <h3>3.2 Crash Reports (Firebase Crashlytics)</h3>
     <p><strong>Only with your explicit consent</strong>, we collect crash reports via Google Firebase Crashlytics to maintain app stability. This includes:</p>
@@ -66,72 +75,125 @@
         <li>Timestamp of the crash</li>
     </ul>
     <p><strong>Purpose:</strong> Identifying and fixing bugs to improve app stability.<br>
-    <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR). You may withdraw consent at any time by disabling crash reports in Settings.<br>
-    <strong>Data processor:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Data may be transferred to the USA under the EU-US Data Privacy Framework. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.<br>
+    <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR). You may withdraw consent at any time by switching crash reports off under "About" in the App.<br>
+    <strong>Data processor:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (privacy policy: https://policies.google.com/privacy). Data may be transferred to the USA; see Section 7.<br>
     <strong>Retention:</strong> Crash data is retained for 90 days in Firebase, after which it is automatically deleted.</p>
 
     <h3>3.3 Usage Analytics (Firebase Analytics)</h3>
-    <p><strong>Only with your explicit consent</strong>, we collect anonymous usage data via Google Firebase Analytics. This includes:</p>
+    <p><strong>Only with your explicit consent</strong>, we collect usage data via Google Firebase Analytics. The data is <strong>pseudonymous</strong>, not anonymous: it carries no name, email address or account, but it is tied to identifiers for your install and device, so it remains personal data under the GDPR and all the rights in Section 9 apply to it. This includes:</p>
     <ul>
         <li>Screens visited within the App</li>
         <li>Features used and interaction events</li>
         <li>Session duration</li>
         <li>Device model, OS version, and language setting</li>
+        <li>Which platform you use the App on, the App's version and build, and how many times this install has been started</li>
+        <li>If you use the App in a browser: the browser name and its user agent string</li>
         <li>Firebase Installation ID (pseudonymous device identifier)</li>
         <li>The same pseudonymous app-install identifier described in Section 3.2, used to attribute events to the same install</li>
     </ul>
     <p><strong>Purpose:</strong> Understanding how the App is used to prioritize improvements.<br>
     <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR).<br>
-    <strong>Data processor:</strong> Google Ireland Limited (see above). Same transfer mechanism applies.<br>
+    <strong>Data processor:</strong> Google Ireland Limited (see above); transfers as described in Section 7.<br>
     <strong>Retention:</strong> Event-level data is retained for 2 months; aggregated reporting data is retained for 14 months. You can request earlier deletion by contacting us.</p>
 
-    <h3>3.4 Subscription and Purchase Processing (RevenueCat)</h3>
-    <p>If you purchase a subscription or in-app product, we use RevenueCat to manage and validate your purchase. The following data is processed:</p>
+    <h3>3.4 Purchase Processing (RevenueCat)</h3>
+    <p>The App offers <strong>one-time, non-subscription</strong> in-app purchases; subscription products are not offered. If you make such a purchase, we use RevenueCat to manage and validate it. The following data is processed:</p>
     <ul>
         <li>An anonymous RevenueCat App User ID (pseudonymous identifier; not linked to your name or email)</li>
-        <li>Purchase and subscription status, product identifiers, transaction history</li>
+        <li>Purchase status, product identifiers, transaction history</li>
         <li>Platform (iOS/Android), country, app version, and device type</li>
         <li>The store transaction receipt provided by Apple App Store or Google Play</li>
     </ul>
     <p>We do <strong>not</strong> receive your payment details (credit card, bank account). Payment is handled exclusively by Apple or Google.</p>
+    <p>RevenueCat is only contacted on iOS and Android, and only from the moment you first open the purchase screen or restore a purchase. On other platforms, and until then, no data is sent to RevenueCat. <strong>During the public beta no purchases are offered</strong>, so in the beta build this processing does not take place at all.</p>
     <p><strong>Purpose:</strong> Processing purchases, validating receipts, granting and restoring entitlements, preventing fraud.<br>
     <strong>Legal basis:</strong> Performance of a contract (Art. 6(1)(b) GDPR).<br>
-    <strong>Data processor:</strong> RevenueCat, Inc., 633 Taraval St #100, San Francisco, CA 94116, USA. Data is transferred to the USA on the basis of the EU-US Data Privacy Framework and Standard Contractual Clauses. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.<br>
-    <strong>Retention:</strong> For the duration of your subscription and as long as required by tax and accounting law (typically up to 10 years for transaction records).</p>
+    <strong>Data processor:</strong> RevenueCat, Inc., 633 Taraval St #100, San Francisco, CA 94116, USA (https://www.revenuecat.com/privacy). Data is transferred to the USA on the basis of Standard Contractual Clauses; see Section 7.<br>
+    <strong>Retention:</strong> For as long as the purchase entitlement exists and as long as required by tax and accounting law (typically up to 10 years for transaction records).</p>
 
     <h3>3.5 Feedback and Document Uploads</h3>
     <p>The App offers a voluntary feedback function (available from the main screen and from a text passage in the reading view). Data is <strong>only</strong> transmitted when you actively choose to send feedback. Depending on how you use it, the following is transmitted to us:</p>
     <ul>
         <li><strong>With every feedback submission:</strong> your message and/or the problem category you selected; the app version and internal processing-engine version numbers; your platform (e.g. "Android", "iOS", "Windows" — no device model); the pseudonymous app-install identifier described in Section 3.2; and the time of submission.</li>
-        <li><strong>When you report a problem with a specific text passage in the reading view:</strong> additionally the tapped text passage itself (a short excerpt of the document's content), its detected role (e.g. heading, body text), and its position in the document (page and block number). This excerpt is transmitted even if you do not upload the document file.</li>
-        <li><strong>Only if you select the upload option:</strong> the document file itself (PDF, EPUB, TXT, or HTML), its file name, file size, page count, and a SHA-256 fingerprint of the file (used to avoid storing duplicate uploads).</li>
+        <li><strong>With every feedback submission you send from the reading view — whether or not you upload the document:</strong> the tapped text passage itself (a short excerpt of the document's content), its detected role (e.g. heading, body text), and its position in the document (page and block number); and, describing the open document, <strong>its file name</strong> (without the file extension), its file size, its page count, and a SHA-256 fingerprint of its contents. Please note that a file name can itself reveal personal information. If you do not want this transmitted, rename the file before reporting, or send your feedback from the main screen instead, where no document data is attached.</li>
+        <li><strong>Only if you tick the upload option:</strong> the document file itself (PDF, EPUB, TXT, or HTML), and its file type. The SHA-256 fingerprint mentioned above is what lets us avoid storing the same document twice.</li>
     </ul>
     <p><strong>Replies:</strong> We may answer your feedback within the App. If you have sent feedback at least once, the App checks for waiting replies when you start it and after you send feedback; this check transmits the app-install identifier described in Section 3.2. Replies are stored under that identifier and are deleted together with the related feedback records. If you answer one of our replies, your feedback additionally includes a reference to that reply, so both sides of the conversation can be related.</p>
-    <p>As with any internet communication, our processor (Google Firebase) transiently processes your device's IP address to deliver the request.</p>
-    <p><strong>Visibility:</strong> Feedback and uploaded documents are accessible <strong>only to us</strong>. They are not shared, published, or made visible to other users or third parties.<br>
-    <strong>Purpose:</strong> Understanding, reproducing, and fixing rendering bugs and other defects you report, and improving the App.<br>
+    <p>Feedback records are stored in Google Cloud Firestore and uploaded documents in Google Firebase Storage, both operated for us by Google as a processor (see Section 6). As with any internet communication, Google transiently processes your device's IP address in order to deliver the request.</p>
+
+    <p><strong>Who can reach an uploaded document.</strong> We do not publish uploaded documents, do not share them with third parties, do not make them visible to other users of the App, and do not offer any way to browse or search the uploads. Your written feedback and the reported text passage are readable only by us.</p>
+    <p>Uploaded files are stored under a name derived from the file's own content (its SHA-256 fingerprint), which is also how we avoid keeping the same document twice. In practice this means the storage address of a document cannot be guessed and cannot be listed — it can only be derived from the file itself, so reaching an upload requires already holding that exact file. We would rather state this plainly than promise more than the storage can guarantee: <strong>if you are unsure, send the feedback without the upload</strong> — the report is still useful to us.</p>
+    <p><strong>Purpose:</strong> Understanding, reproducing, and fixing rendering bugs and other defects you report, and improving the App.<br>
     <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR), given by sending the feedback or initiating the upload.<br>
     <strong>Important:</strong> Please do not upload documents containing sensitive personal data, confidential information, or material whose copyright does not permit you to share it. By uploading, you confirm that you are entitled to share the file with us for debugging purposes.<br>
     <strong>Retention:</strong> Uploaded documents are deleted once the related issue has been resolved, and in any case no later than 12 months after upload. Feedback records (message, text passage, technical context) are deleted no later than 24 months after submission. You may request earlier deletion at any time by contacting us.</p>
+
+    <h3>3.6 Reading Fonts Loaded from Google (Google Fonts)</h3>
+    <p>The App offers a choice of reading fonts. Some of them are built into the App and need no network access (currently Cardo, Linux Libertine, OpenDyslexic and OpenDyslexic Alta). The remainder — the fonts from the Google Fonts library, such as Roboto, Poppins, Mulish, Libre Baskerville and Crimson Text — are <strong>not</strong> shipped inside the App. The first time such a font is actually used, the App downloads it from Google's font server (fonts.gstatic.com) and then stores it on your device, so the download happens once per font and not again.</p>
+    <p>Because this is an ordinary web request, Google necessarily receives your device's <strong>IP address</strong>, the name of the font requested and the time of the request. No identifier from this App is sent with it, and the request carries none of your reading data.</p>
+    <p>Note that this happens <strong>independently of the consent settings in Section 5</strong>, and that it can also occur shortly after you start the App, because the App loads your chosen reading font ahead of time so that opening a book is not delayed.</p>
+    <p><strong>How to avoid it entirely:</strong> pick one of the built-in fonts named above. If your chosen font is already stored on your device, no further request is made either.</p>
+    <p><strong>Purpose:</strong> Displaying your chosen reading font.<br>
+    <strong>Legal basis:</strong> Our legitimate interest in offering a wide choice of reading fonts without inflating the App's download size (Art. 6(1)(f) GDPR). You may object under Art. 21 GDPR; selecting a built-in font gives immediate effect to such an objection.<br>
+    <strong>Recipient:</strong> Google Ireland Limited / Google LLC (see Sections 6 and 7). Google's use of this server data is governed by its own privacy policy: https://policies.google.com/privacy<br>
+    <strong>Retention:</strong> We receive and store nothing at all in this process; the downloaded font file remains on your device until you clear the App's storage.</p>
 
     <h2>4. Data We Do NOT Collect</h2>
     <ul>
         <li>We do <strong>not</strong> collect or transmit the content of your documents, <strong>except</strong> for files you voluntarily upload via the feedback function and the short text passage you are reporting a problem about (see Section 3.5).</li>
         <li>We do <strong>not</strong> receive your payment details — purchases are handled by Apple App Store or Google Play (see Section 3.4).</li>
-        <li>We do <strong>not</strong> use advertising IDs or serve ads.</li>
+        <li>We do <strong>not</strong> serve ads. The App contains no advertising SDK.</li>
         <li>We do <strong>not</strong> sell, rent, or share your personal data with third parties for their own purposes.</li>
         <li>We do <strong>not</strong> create user profiles for advertising or marketing purposes.</li>
+        <li>We do <strong>not</strong> track you across other apps or websites, and we ask for no tracking permission. On iOS the App never requests App Tracking Transparency permission, so no IDFA is available to it.</li>
     </ul>
+    <p><strong>One qualification, stated plainly:</strong> on <strong>Android</strong>, while — and only while — you have enabled usage analytics (Section 3.3), the Firebase Analytics SDK is technically able to read your device's Google Advertising ID, and the SDK declares the corresponding permission. We do not use that identifier: we run no ads, build no advertising profiles, and export nothing to any ad product. If you would rather it were not read at all, leave usage analytics switched off — with analytics disabled, the SDK collects nothing.</p>
 
     <h2>5. Consent and Opt-In</h2>
-    <p>On first launch, the App presents a consent dialog. Both crash reporting (Firebase Crashlytics) and usage analytics (Firebase Analytics) require your <strong>explicit opt-in</strong> and are not enabled until you actively allow them. You may:</p>
+    <p>On first launch, the App presents a consent screen. Both crash reporting (Firebase Crashlytics) and usage analytics (Firebase Analytics) require your <strong>explicit opt-in</strong>: both are switched off in the App's configuration by default and are not enabled until you actively allow them. Neither sends anything before you decide. You may:</p>
     <ul>
-        <li>Grant or deny consent for each service independently</li>
-        <li>Change your consent at any time in the App's <strong>Settings</strong> screen</li>
-        <li>Withdrawing consent stops future data collection but does not affect the lawfulness of data processed before withdrawal</li>
+        <li>Grant or deny consent for each service independently, or reject both with a single tap</li>
+        <li>Change your consent at any time under <strong>"About"</strong> in the App, where both switches are repeated</li>
+        <li>Withdraw consent as easily as you gave it; withdrawal stops future data collection but does not affect the lawfulness of data processed before withdrawal</li>
     </ul>
+    <p>The feedback function (Section 3.5) is not covered by this screen: it transmits nothing until you open it and send something, and each upload is a separate, explicit decision.</p>
 
-    <h2 id="data-deletion">6. Your Rights Under GDPR</h2>
+    <h2>6. Recipients and Processors</h2>
+    <p>We do not sell your data and we disclose it to no one except the service providers listed below, each of which processes it on our behalf and on our instructions under a data processing agreement pursuant to Art. 28 GDPR. Beyond these, data is disclosed only where we are legally obliged to do so.</p>
+    <p>Both agreements are incorporated by reference into the provider terms we accepted — Google's Cloud Data Processing Addendum and RevenueCat's Data Processing Addendum — and neither requires a separate signature.</p>
+    <ul>
+        <li><strong>Google Ireland Limited</strong>, Gordon House, Barrow Street, Dublin 4, Ireland — operates the Firebase services we use: Crashlytics (Section 3.2), Analytics (Section 3.3), Cloud Firestore and Firebase Storage (feedback records and uploaded documents, Section 3.5), and the hosting of our website. Privacy policy: https://policies.google.com/privacy</li>
+        <li><strong>Google</strong> also operates the font server described in Section 3.6. In that case Google does not act as our processor: it receives your IP address directly from your device as the operator of that service, and processes it under its own responsibility.</li>
+        <li><strong>RevenueCat, Inc.</strong>, 633 Taraval St #100, San Francisco, CA 94116, USA — purchase validation and entitlement management (Section 3.4). Not contacted during the public beta. Privacy policy: https://www.revenuecat.com/privacy</li>
+    </ul>
+    <p><strong>Apple</strong> (App Store / TestFlight) and <strong>Google</strong> (Google Play) act as <strong>independent controllers</strong>, not as our processors, when they distribute the App and process your payment. What they collect is governed by their own privacy policies, not by this one. We receive from them only the purchase confirmation described in Section 3.4.</p>
+
+    <h3>6.1 Our website</h3>
+    <p>When you visit www.pdfreflow.com — including this document, if you are reading it in a browser — the pages are delivered by Firebase Hosting (Google Ireland Limited). Google processes your IP address, the requested address, the time of the request and your browser's user agent in server log data, which is technically necessary to deliver the page and to defend against attacks. Legal basis: our legitimate interest in operating a secure website (Art. 6(1)(f) GDPR). The website sets no tracking cookies and embeds no advertising, analytics or social-media third-party content.</p>
+
+    <h2>7. International Data Transfers</h2>
+    <p>Some of the providers above process data outside the European Economic Area, in particular in the USA. In those cases the transfer is safeguarded as follows:</p>
+    <ul>
+        <li><strong>Google:</strong> Google LLC is certified under the <strong>EU-US Data Privacy Framework</strong> (Art. 45(1) GDPR adequacy decision of 10 July 2023); Standard Contractual Clauses pursuant to Art. 46(2)(c) GDPR apply in addition.</li>
+        <li><strong>RevenueCat:</strong> transfer on the basis of <strong>Standard Contractual Clauses</strong> pursuant to Art. 46(2)(c) GDPR, as set out in RevenueCat's Data Processing Addendum. RevenueCat does not claim certification under the EU-US Data Privacy Framework, so we do not rely on it for these transfers.</li>
+    </ul>
+    <p>Despite these safeguards, we must point out that data in a third country may be subject to access by that country's authorities, and that the level of protection there may not correspond in every respect to that within the EU. Where a transfer rests on your consent, it also rests on Art. 49(1)(a) GDPR.</p>
+
+    <h2>8. Retention Periods</h2>
+    <p>Each section above states the retention period for the data it describes. In summary:</p>
+    <ul>
+        <li><strong>Data on your device</strong> (Section 3.1) — kept until you delete the book, clear the App's storage, or uninstall the App. We cannot delete it for you; it never reaches us.</li>
+        <li><strong>Crash reports</strong> (Section 3.2) — 90 days.</li>
+        <li><strong>Analytics events</strong> (Section 3.3) — event-level data 2 months, aggregated reporting data 14 months.</li>
+        <li><strong>Purchase records</strong> (Section 3.4) — for the life of the entitlement, then as required by tax and accounting law (typically up to 10 years).</li>
+        <li><strong>Uploaded documents</strong> (Section 3.5) — deleted once the reported issue is resolved, at the latest 12 months after upload.</li>
+        <li><strong>Feedback records and our replies</strong> (Section 3.5) — at the latest 24 months after submission.</li>
+        <li><strong>The pseudonymous app-install identifier</strong> (Section 3.2) — held on your device until you clear the App's storage; on our side it exists only inside the records listed above and disappears with them.</li>
+        <li><strong>Downloaded reading fonts</strong> (Section 3.6) — we store nothing; the font file stays on your device until you clear the App's storage. What Google retains in its own server logs is determined by Google.</li>
+    </ul>
+    <p>You may ask us to delete your data earlier at any time; see Section 9.</p>
+
+    <h2 id="data-deletion">9. Your Rights Under GDPR</h2>
     <p>You have the right to:</p>
     <ul>
         <li><strong>Access</strong> (Art. 15 GDPR) — request a copy of any personal data we hold about you</li>
@@ -144,22 +206,29 @@
         <li><strong>Lodge a complaint</strong> with your local data protection authority (Art. 77 GDPR)</li>
     </ul>
     <p>To exercise any of these rights, contact us at privacy.policy.reader@eggnstone.com.</p>
+    <p><strong>How we find your data — this matters, because the App has no user account.</strong> Everything we hold is filed under the pseudonymous app-install identifier described in Section 3.2, and nothing links it to your name or your email address. If you write to us from an email address we have never seen, we have no way of telling which records are yours, and under Art. 11(2) GDPR we may then have to decline the request. To make a request we can actually act on, <strong>send it through the App's feedback function</strong> ("Feedback" on the main screen): your message reaches us already tagged with your install identifier, so we can find and delete exactly your records. Mention in the message that it is a data protection request and tell us what you want done.</p>
+    <p>Two consequences worth knowing: if you have cleared the App's storage or reinstalled the App, the old identifier is gone and neither you nor we can connect you to data submitted earlier. And an uploaded document is stored under its content fingerprint rather than under your identifier, so where several people have uploaded the same file, deleting it on your request removes it for all of them.</p>
 
-    <h2>7. Data Security</h2>
+    <h2>10. No Automated Decision-Making</h2>
+    <p>We do not use your personal data for automated decision-making or profiling that produces legal effects concerning you or similarly significantly affects you within the meaning of Art. 22 GDPR. The App's layout analysis runs on your device and decides how a document is displayed — it makes no decisions about you.</p>
+
+    <h2>11. Data Security</h2>
     <p>We implement appropriate technical and organizational measures to protect your data:</p>
     <ul>
-        <li>All data transmitted to Firebase is encrypted in transit (TLS)</li>
+        <li>All data transmitted to Firebase is encrypted in transit (TLS) and encrypted at rest by Google</li>
         <li>Local data is stored in the App's sandboxed storage, protected by your device's OS security</li>
+        <li>Feedback records are readable only by us; nothing in the App can read another install's feedback</li>
         <li>We limit data collection to what is strictly necessary for the stated purposes</li>
     </ul>
+    <p>Please also read the explanation in Section 3.5 of how uploaded document files are addressed and who can retrieve them; it describes a deliberate limitation of this protection.</p>
 
-    <h2>8. Children's Privacy</h2>
+    <h2>12. Children's Privacy</h2>
     <p>The App is not directed at children under 16 years of age. We do not knowingly collect personal data from children. If you believe a child has provided us with personal data, please contact us so we can delete it.</p>
 
-    <h2>9. Changes to This Privacy Policy</h2>
+    <h2>13. Changes to This Privacy Policy</h2>
     <p>We may update this Privacy Policy from time to time. We will notify you of material changes by displaying a notice within the App. The "Last updated" date at the top indicates the most recent revision.</p>
 
-    <h2>10. Contact</h2>
+    <h2>14. Contact</h2>
     <p>If you have questions about this Privacy Policy or our data practices, please contact:</p>
     <p>
         Mark Eggenstein<br>

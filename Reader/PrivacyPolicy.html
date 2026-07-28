@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1>Privacy Policy for PDFreflow</h1>
-    <p class="last-updated"><strong>Last updated:</strong> 2026-07-26</p>
+    <p class="last-updated"><strong>Last updated:</strong> 2026-07-27</p>
 
     <h2>1. Controller</h2>
     <p>
@@ -82,7 +82,7 @@
     <h3>3.3 Usage Analytics (Firebase Analytics)</h3>
     <p><strong>Only with your explicit consent</strong>, we collect usage data via Google Firebase Analytics. The data is <strong>pseudonymous</strong>, not anonymous: it carries no name, email address or account, but it is tied to identifiers for your install and device, so it remains personal data under the GDPR and all the rights in Section 9 apply to it. This includes:</p>
     <ul>
-        <li>Screens visited within the App</li>
+        <li>Which of the App's features you use, as individual interaction events. The App reports no in-app screen or route names; the analytics SDK records only the single host screen the whole App runs in.</li>
         <li>Features used and interaction events</li>
         <li>Session duration</li>
         <li>Device model, OS version, and language setting</li>
@@ -122,7 +122,7 @@
     <p>Feedback records are stored in Google Cloud Firestore and uploaded documents in Google Firebase Storage, both operated for us by Google as a processor (see Section 6). As with any internet communication, Google transiently processes your device's IP address in order to deliver the request.</p>
 
     <p><strong>Who can reach an uploaded document.</strong> We do not publish uploaded documents, do not share them with third parties, do not make them visible to other users of the App, and do not offer any way to browse or search the uploads. Your written feedback and the reported text passage are readable only by us.</p>
-    <p>Uploaded files are stored under a name derived from the file's own content (its SHA-256 fingerprint), which is also how we avoid keeping the same document twice. In practice this means the storage address of a document cannot be guessed and cannot be listed — it can only be derived from the file itself, so reaching an upload requires already holding that exact file. We would rather state this plainly than promise more than the storage can guarantee: <strong>if you are unsure, send the feedback without the upload</strong> — the report is still useful to us.</p>
+    <p>Uploaded files are stored under a name derived from the file's own content (its SHA-256 fingerprint), which is also how we avoid keeping the same document twice. The storage permits uploads only: it grants no public read access, and uploaded documents can be neither listed nor downloaded without our administrative credentials. Where the App needs to know whether a document has already been uploaded, it asks a service of ours that answers only yes or no, so the file itself is never served in order to answer that question. <strong>If you are unsure, send the feedback without the upload</strong> — the report is still useful to us.</p>
     <p><strong>Purpose:</strong> Understanding, reproducing, and fixing rendering bugs and other defects you report, and improving the App.<br>
     <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR), given by sending the feedback or initiating the upload.<br>
     <strong>Important:</strong> Please do not upload documents containing sensitive personal data, confidential information, or material whose copyright does not permit you to share it. By uploading, you confirm that you are entitled to share the file with us for debugging purposes.<br>

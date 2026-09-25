@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1>Privacy Policy for PDFreflow</h1>
-    <p class="last-updated"><strong>Last updated:</strong> 2026-07-28</p>
+    <p class="last-updated"><strong>Last updated:</strong> 2026-09-24</p>
 
     <h2>1. Controller</h2>
     <p>
@@ -121,7 +121,9 @@
     <p><strong>Replies:</strong> We may answer your feedback within the App. If you have sent feedback at least once, the App checks for waiting replies when you start it and after you send feedback; this check transmits the app-install identifier described in Section 3.2. Replies are stored under that identifier and are deleted together with the related feedback records. If you answer one of our replies, your feedback additionally includes a reference to that reply, so both sides of the conversation can be related.</p>
     <p>Feedback records are stored in Google Cloud Firestore and uploaded documents in Google Firebase Storage, both operated for us by Google as a processor (see Section 6). As with any internet communication, Google transiently processes your device's IP address in order to deliver the request.</p>
 
-    <p><strong>Who can reach an uploaded document.</strong> We do not publish uploaded documents, do not share them with third parties, do not make them visible to other users of the App, and do not offer any way to browse or search the uploads. Your written feedback and the reported text passage are readable only by us.</p>
+    <p>To analyse and reproduce a reported defect, we use AI models from Anthropic (Claude) as a development tool. For that purpose we may pass the content of a report to Anthropic — your message, the reported text passage, the technical context listed above and, if you uploaded it, the document itself or text and page images taken from it. A document you uploaded may also be kept in our test collection of problem documents while the defect is being fixed, and be processed there in development environments that Anthropic operates for us. Anthropic acts as our processor (Section 6) and may not use this data to train its models.</p>
+
+    <p><strong>Who can reach an uploaded document.</strong> We do not publish uploaded documents, do not share them with anyone except the processors named in Section 6, do not make them visible to other users of the App, and do not offer any way to browse or search the uploads. Your written feedback and the reported text passage are readable only by us and by the processors named in Section 6, on our instructions.</p>
     <p>Uploaded files are stored under a name derived from the file's own content (its SHA-256 fingerprint), which is also how we avoid keeping the same document twice. The storage permits uploads only: it grants no public read access, and uploaded documents can be neither listed nor downloaded without our administrative credentials. Where the App needs to know whether a document has already been uploaded, it asks a service of ours that answers only yes or no, so the file itself is never served in order to answer that question. <strong>If you are unsure, send the feedback without the upload</strong> — the report is still useful to us.</p>
     <p><strong>Purpose:</strong> Understanding, reproducing, and fixing rendering bugs and other defects you report, and improving the App.<br>
     <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR), given by sending the feedback or initiating the upload.<br>
@@ -160,11 +162,12 @@
 
     <h2>6. Recipients and Processors</h2>
     <p>We do not sell your data and we disclose it to no one except the service providers listed below, each of which processes it on our behalf and on our instructions under a data processing agreement pursuant to Art. 28 GDPR. Beyond these, data is disclosed only where we are legally obliged to do so.</p>
-    <p>Both agreements are incorporated by reference into the provider terms we accepted — Google's Cloud Data Processing Addendum and RevenueCat's Data Processing Addendum — and neither requires a separate signature.</p>
+    <p>Each agreement is incorporated by reference into the provider terms we accepted — Google's Cloud Data Processing Addendum, RevenueCat's Data Processing Addendum and Anthropic's Data Processing Addendum — and none requires a separate signature.</p>
     <ul>
         <li><strong>Google Ireland Limited</strong>, Gordon House, Barrow Street, Dublin 4, Ireland — operates the Firebase services we use: Crashlytics (Section 3.2), Analytics (Section 3.3), Cloud Firestore and Firebase Storage (feedback records and uploaded documents, Section 3.5), and the hosting of our website. Privacy policy: https://policies.google.com/privacy</li>
         <li><strong>Google</strong> also operates the font server described in Section 3.6. In that case Google does not act as our processor: it receives your IP address directly from your device as the operator of that service, and processes it under its own responsibility.</li>
         <li><strong>RevenueCat, Inc.</strong>, 633 Taraval St #100, San Francisco, CA 94116, USA — purchase validation and entitlement management (Section 3.4). Not contacted during the public beta. Privacy policy: https://www.revenuecat.com/privacy</li>
+        <li><strong>Anthropic Ireland, Limited</strong>, 6th Floor, South Bank House, Barrow Street, Dublin 4, D04 TR29, Ireland — AI models (Claude) we use to analyse and reproduce defects reported through the feedback function, and the development environments in which reported documents from our test collection are processed (Section 3.5). Privacy policy: https://www.anthropic.com/legal/privacy</li>
     </ul>
     <p><strong>Apple</strong> (App Store / TestFlight) and <strong>Google</strong> (Google Play) act as <strong>independent controllers</strong>, not as our processors, when they distribute the App and process your payment. What they collect is governed by their own privacy policies, not by this one. We receive from them only the purchase confirmation described in Section 3.4.</p>
 
@@ -176,6 +179,7 @@
     <ul>
         <li><strong>Google:</strong> Google LLC is certified under the <strong>EU-US Data Privacy Framework</strong> (Art. 45(1) GDPR adequacy decision of 10 July 2023); Standard Contractual Clauses pursuant to Art. 46(2)(c) GDPR apply in addition.</li>
         <li><strong>RevenueCat:</strong> transfer on the basis of <strong>Standard Contractual Clauses</strong> pursuant to Art. 46(2)(c) GDPR, as set out in RevenueCat's Data Processing Addendum. RevenueCat does not claim certification under the EU-US Data Privacy Framework, so we do not rely on it for these transfers.</li>
+        <li><strong>Anthropic:</strong> data may be transferred to the USA (Anthropic, PBC); the transfer rests on <strong>Standard Contractual Clauses</strong> pursuant to Art. 46(2)(c) GDPR, as set out in Anthropic's Data Processing Addendum. Anthropic does not claim certification under the EU-US Data Privacy Framework, so we do not rely on it for these transfers.</li>
     </ul>
     <p>Despite these safeguards, we must point out that data in a third country may be subject to access by that country's authorities, and that the level of protection there may not correspond in every respect to that within the EU. Where a transfer rests on your consent, it also rests on Art. 49(1)(a) GDPR.</p>
 
@@ -217,7 +221,7 @@
     <ul>
         <li>All data transmitted to Firebase is encrypted in transit (TLS) and encrypted at rest by Google</li>
         <li>Local data is stored in the App's sandboxed storage, protected by your device's OS security</li>
-        <li>Feedback records are readable only by us; nothing in the App can read another install's feedback</li>
+        <li>Feedback records are readable only by us and our processors (Section 6); nothing in the App can read another install's feedback</li>
         <li>We limit data collection to what is strictly necessary for the stated purposes</li>
     </ul>
     <p>Please also read the explanation in Section 3.5 of how uploaded document files are addressed and who can retrieve them; it describes a deliberate limitation of this protection.</p>

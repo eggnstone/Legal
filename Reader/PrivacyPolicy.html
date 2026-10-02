@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1>Privacy Policy for PDFreflow</h1>
-    <p class="last-updated"><strong>Last updated:</strong> 2026-09-24</p>
+    <p class="last-updated"><strong>Last updated:</strong> 2026-10-01</p>
 
     <h2>1. Controller</h2>
     <p>
@@ -41,7 +41,7 @@
 
     <h2>2. Overview</h2>
     <p>PDFreflow ("the App") is a document reader that reflows PDF, EPUB, TXT and HTML files for comfortable reading on small screens. This policy covers every platform on which we make the App available, and our website www.pdfreflow.com. We take the protection of your personal data seriously and process it in accordance with the EU General Data Protection Regulation (GDPR/DSGVO), the ePrivacy Directive, and applicable national data protection laws.</p>
-    <p><strong>The short version:</strong> your documents and your reading are processed on your device and are not transmitted to us. Nothing reaches <em>us</em> unless you switch it on (crash reports, usage analytics) or actively send it (feedback, an optional document upload). Three points deserve your attention:</p>
+    <p><strong>The short version:</strong> your documents and your reading are processed on your device and are not transmitted to us, except that a crash report you allowed includes the number of the page being processed when the problem occurred (Section 3.2). Nothing reaches <em>us</em> unless you switch it on (crash reports, usage analytics) or actively send it (feedback, an optional document upload). Three points deserve your attention:</p>
     <ul>
         <li>A feedback report sent from the reading view always includes the open document's <strong>file name</strong> and a short excerpt of its text, even if you decline the upload (Section 3.5).</li>
         <li>The feedback function can optionally upload the document itself. That is always a separate, explicit decision on your part (Section 3.5).</li>
@@ -60,7 +60,7 @@
         <li>A local cache of processed book data</li>
     </ul>
     <p>This local data processing is necessary for the App to function and does not require consent under GDPR, as no personal data leaves your device.</p>
-    <p>The one exception is the feedback function: if — and only if — you use it, some of this data is transmitted, as described in Section 3.5. Nothing else in the App ever sends a document, a reading position or a setting anywhere.</p>
+    <p>There are two exceptions: the feedback function, if — and only if — you use it, transmits some of this data as described in Section 3.5; and a crash report you allowed includes the number of the page being processed when the problem occurred (Section 3.2). Nothing else in the App ever sends a document, a reading position or a setting anywhere.</p>
 
     <h3>3.2 Crash Reports (Firebase Crashlytics)</h3>
     <p><strong>Only with your explicit consent</strong>, we collect crash reports via Google Firebase Crashlytics to maintain app stability. This includes:</p>
@@ -73,6 +73,7 @@
         <li>Firebase Installation ID (pseudonymous device identifier)</li>
         <li>A pseudonymous app-install identifier (random UUID) that we generate on first launch and store locally on your device. It is used solely to correlate data originating from the same install: crash reports, analytics events (Section 3.3), and feedback you submit (Section 3.5). The identifier may persist across uninstall/reinstall if your device's operating system restores app data from its own backup service (Android Auto Backup via Google Drive, or iCloud/iTunes backup on iOS); we have no access to those backups. Clearing the App's storage removes it.</li>
         <li>Timestamp of the crash</li>
+        <li>When the problem involves a document: its file type, file size, page count and a SHA-256 fingerprint of its contents, the number of the page or pages being processed, and the App's language and your device's language and region setting. A crash report never contains the document's file name or any of its text.</li>
     </ul>
     <p><strong>Purpose:</strong> Identifying and fixing bugs to improve app stability.<br>
     <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR). You may withdraw consent at any time by switching crash reports off under "About" in the App.<br>
@@ -112,11 +113,11 @@
     <strong>Retention:</strong> For as long as the purchase entitlement exists and as long as required by tax and accounting law (typically up to 10 years for transaction records).</p>
 
     <h3>3.5 Feedback and Document Uploads</h3>
-    <p>The App offers a voluntary feedback function (available from the main screen and from a text passage in the reading view). Data is <strong>only</strong> transmitted when you actively choose to send feedback. Depending on how you use it, the following is transmitted to us:</p>
+    <p>The App offers a voluntary feedback function (available from the main screen, from a text passage in the reading view, and from the notices shown when a document cannot be opened or takes unusually long to open). Data is <strong>only</strong> transmitted when you actively choose to send feedback. Depending on how you use it, the following is transmitted to us:</p>
     <ul>
         <li><strong>With every feedback submission:</strong> your message and/or the problem category you selected; the app version and internal processing-engine version numbers; your platform (e.g. "Android", "iOS", "Windows" — no device model); the pseudonymous app-install identifier described in Section 3.2; and the time of submission.</li>
         <li><strong>With every feedback submission you send from the reading view — whether or not you upload the document:</strong> the tapped text passage itself (a short excerpt of the document's content), its detected role (e.g. heading, body text), and its position in the document (page and block number); and, describing the open document, <strong>its file name</strong> (without the file extension), its file size, its page count, and a SHA-256 fingerprint of its contents. Please note that a file name can itself reveal personal information. If you do not want this transmitted, rename the file before reporting, or send your feedback from the main screen instead, where no document data is attached.</li>
-        <li><strong>Only if you tick the upload option:</strong> the document file itself (PDF, EPUB, TXT, or HTML), and its file type. The SHA-256 fingerprint mentioned above is what lets us avoid storing the same document twice.</li>
+        <li><strong>Only if you choose to send it — by ticking the upload option in the feedback form, or by pressing the button that sends the document in the notices shown when a document cannot be opened or takes unusually long to open:</strong> the document file itself (PDF, EPUB, TXT, or HTML) and its file type, and, when sent from one of those notices, its file name, file size and SHA-256 fingerprint. The SHA-256 fingerprint is what lets us avoid storing the same document twice.</li>
     </ul>
     <p><strong>Replies:</strong> We may answer your feedback within the App. If you have sent feedback at least once, the App checks for waiting replies when you start it and after you send feedback; this check transmits the app-install identifier described in Section 3.2. Replies are stored under that identifier and are deleted together with the related feedback records. If you answer one of our replies, your feedback additionally includes a reference to that reply, so both sides of the conversation can be related.</p>
     <p>Feedback records are stored in Google Cloud Firestore and uploaded documents in Google Firebase Storage, both operated for us by Google as a processor (see Section 6). As with any internet communication, Google transiently processes your device's IP address in order to deliver the request.</p>

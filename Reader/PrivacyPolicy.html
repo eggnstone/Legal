@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1>Privacy Policy for PDFreflow</h1>
-    <p class="last-updated"><strong>Last updated:</strong> 2026-10-07</p>
+    <p class="last-updated"><strong>Last updated:</strong> 2026-11-04</p>
 
     <h2>1. Controller</h2>
     <p>
@@ -47,7 +47,6 @@
         <li>The feedback function can optionally upload the document itself. That is always a separate, explicit decision on your part (Section 3.5).</li>
         <li>Choosing one of the Google Fonts reading fonts causes the App to download that font from Google, which reveals your IP address to Google — this is the one thing that leaves your device without a consent prompt (Section 3.6).</li>
     </ul>
-    <p>The App is currently in public beta. Where the beta behaves differently from the finished product, this policy says so.</p>
 
     <h2>3. Data We Collect</h2>
 
@@ -98,7 +97,7 @@
     <strong>Retention:</strong> Event-level data is retained for 2 months; aggregated reporting data is retained for 14 months. You can request earlier deletion by contacting us.</p>
 
     <h3>3.4 Purchase Processing (RevenueCat)</h3>
-    <p>The App offers <strong>one-time, non-subscription</strong> in-app purchases; subscription products are not offered. If you make such a purchase, we use RevenueCat to manage and validate it. The following data is processed:</p>
+    <p>The App offers <strong>one-time, non-subscription</strong> in-app purchases; subscription products are not offered. We use RevenueCat to manage and validate these purchases. The following data is processed:</p>
     <ul>
         <li>An anonymous RevenueCat App User ID (pseudonymous identifier; not linked to your name or email)</li>
         <li>Purchase status, product identifiers, transaction history</li>
@@ -106,7 +105,7 @@
         <li>The store transaction receipt provided by Apple App Store or Google Play</li>
     </ul>
     <p>We do <strong>not</strong> receive your payment details (credit card, bank account). Payment is handled exclusively by Apple or Google.</p>
-    <p>RevenueCat is only contacted on iOS and Android, and only from the moment you first open the purchase screen or restore a purchase. On other platforms, and until then, no data is sent to RevenueCat. <strong>During the public beta no purchases are offered</strong>, so in the beta build this processing does not take place at all.</p>
+    <p>RevenueCat is contacted only on iOS and Android: each time the App starts, to check whether this installation holds Premium, and when you buy or restore a purchase. On other platforms no data is sent to RevenueCat.</p>
     <p><strong>Purpose:</strong> Processing purchases, validating receipts, granting and restoring entitlements, preventing fraud.<br>
     <strong>Legal basis:</strong> Performance of a contract (Art. 6(1)(b) GDPR).<br>
     <strong>Data processor:</strong> RevenueCat, Inc., 633 Taraval St #100, San Francisco, CA 94116, USA (https://www.revenuecat.com/privacy). Data is transferred to the USA on the basis of Standard Contractual Clauses; see Section 7.<br>
@@ -117,7 +116,7 @@
     <ul>
         <li><strong>With every feedback submission:</strong> your message and/or the problem category you selected; the app version and internal processing-engine version numbers; your platform (e.g. "Android", "iOS", "Windows" — no device model); the pseudonymous app-install identifier described in Section 3.2; and the time of submission.</li>
         <li><strong>With every feedback submission you send from the reading view — whether or not you upload the document:</strong> the tapped text passage itself (a short excerpt of the document's content), its detected role (e.g. heading, body text), and its position in the document (page and block number); and, describing the open document, <strong>its file name</strong> (without the file extension), its file size, its page count, and a SHA-256 fingerprint of its contents. Please note that a file name can itself reveal personal information. If you do not want this transmitted, rename the file before reporting, or send your feedback from the main screen instead, where no document data is attached.</li>
-        <li><strong>Only if you choose to send it — by ticking the upload option in the feedback form, or by pressing the button that sends the document in the notices shown when a document cannot be opened or takes unusually long to open:</strong> the document file itself (PDF, EPUB, TXT, or HTML) and its file type, and, when sent from one of those notices, its file name, file size and SHA-256 fingerprint. The SHA-256 fingerprint is what lets us avoid storing the same document twice.</li>
+        <li><strong>Only if you choose to send it — by checking the upload option in the feedback form, or by pressing the button that sends the document in the notices shown when a document cannot be opened or takes unusually long to open:</strong> the document file itself (PDF, EPUB, TXT, or HTML) and its file type, and, when sent from one of those notices, its file name, file size and SHA-256 fingerprint. The SHA-256 fingerprint is what lets us avoid storing the same document twice.</li>
     </ul>
     <p><strong>Replies:</strong> We may answer your feedback within the App. If you have sent feedback at least once, the App checks for waiting replies when you start it and after you send feedback; this check transmits the app-install identifier described in Section 3.2. Replies are stored under that identifier and are deleted together with the related feedback records. If you answer one of our replies, your feedback additionally includes a reference to that reply, so both sides of the conversation can be related.</p>
     <p>Feedback records are stored in Google Cloud Firestore and uploaded documents in Google Firebase Storage, both operated for us by Google as a processor (see Section 6). As with any internet communication, Google transiently processes your device's IP address in order to deliver the request.</p>
@@ -167,7 +166,7 @@
     <ul>
         <li><strong>Google Ireland Limited</strong>, Gordon House, Barrow Street, Dublin 4, Ireland — operates the Firebase services we use: Crashlytics (Section 3.2), Analytics (Section 3.3), Cloud Firestore and Firebase Storage (feedback records and uploaded documents, Section 3.5), and the hosting of our website. Privacy policy: https://policies.google.com/privacy</li>
         <li><strong>Google</strong> also operates the font server described in Section 3.6. In that case Google does not act as our processor: it receives your IP address directly from your device as the operator of that service, and processes it under its own responsibility.</li>
-        <li><strong>RevenueCat, Inc.</strong>, 633 Taraval St #100, San Francisco, CA 94116, USA — purchase validation and entitlement management (Section 3.4). Not contacted during the public beta. Privacy policy: https://www.revenuecat.com/privacy</li>
+        <li><strong>RevenueCat, Inc.</strong>, 633 Taraval St #100, San Francisco, CA 94116, USA — purchase validation and entitlement management (Section 3.4). Privacy policy: https://www.revenuecat.com/privacy</li>
         <li><strong>Anthropic Ireland, Limited</strong>, 6th Floor, South Bank House, Barrow Street, Dublin 4, D04 TR29, Ireland — AI models (Claude) we use to analyze and reproduce defects reported through the feedback function, and the development environments in which reported documents from our test collection are processed (Section 3.5). Privacy policy: https://www.anthropic.com/legal/privacy</li>
     </ul>
     <p><strong>Apple</strong> (App Store / TestFlight) and <strong>Google</strong> (Google Play) act as <strong>independent controllers</strong>, not as our processors, when they distribute the App and process your payment. What they collect is governed by their own privacy policies, not by this one. We receive from them only the purchase confirmation described in Section 3.4.</p>
@@ -178,7 +177,7 @@
     <h2>7. International Data Transfers</h2>
     <p>Some of the providers above process data outside the European Economic Area, in particular in the USA. In those cases the transfer is safeguarded as follows:</p>
     <ul>
-        <li><strong>Google:</strong> Google LLC is certified under the <strong>EU-US Data Privacy Framework</strong> (Art. 45(1) GDPR adequacy decision of 10 July 2023); Standard Contractual Clauses pursuant to Art. 46(2)(c) GDPR apply in addition.</li>
+        <li><strong>Google:</strong> Google LLC is certified under the <strong>EU-US Data Privacy Framework</strong> (Art. 45(1) GDPR adequacy decision of July 10, 2023); Standard Contractual Clauses pursuant to Art. 46(2)(c) GDPR apply in addition.</li>
         <li><strong>RevenueCat:</strong> transfer on the basis of <strong>Standard Contractual Clauses</strong> pursuant to Art. 46(2)(c) GDPR, as set out in RevenueCat's Data Processing Addendum. RevenueCat does not claim certification under the EU-US Data Privacy Framework, so we do not rely on it for these transfers.</li>
         <li><strong>Anthropic:</strong> data may be transferred to the USA (Anthropic, PBC); the transfer rests on <strong>Standard Contractual Clauses</strong> pursuant to Art. 46(2)(c) GDPR, as set out in Anthropic's Data Processing Addendum. Anthropic does not claim certification under the EU-US Data Privacy Framework, so we do not rely on it for these transfers.</li>
     </ul>
